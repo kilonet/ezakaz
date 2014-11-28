@@ -1,0 +1,437 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48044853-5DBD-4A4D-B5ED-053F802E45E2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EZakaz.Web.UI</RootNamespace>
+    <AssemblyName>EZakaz.Web.UI</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\my downloads\develop tools\AjaxControlToolkitBinary\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.1.11517.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\my downloads\ELMAH-1.1-bin\bin\net-3.5\Release\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="JAGregory.Controls.DeleGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\JAGregory.Controls.DeleGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\my downloads\develop tools\Npgsql2.0.6-bin-ms.net3.5sp1\Npgsql2.0.6-bin-ms.net3.5sp1\bin\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.4.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\PostgreSQL\Npgsql\bin\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.61.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\my downloads\ELMAH-1.1-bin\bin\net-3.5\Release\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\EditItemInfo.aspx.cs">
+      <DependentUpon>EditItemInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditItemInfo.aspx.designer.cs">
+      <DependentUpon>EditItemInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrder.aspx.cs">
+      <DependentUpon>EditOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditOrder.aspx.designer.cs">
+      <DependentUpon>EditOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interchange.Master.cs">
+      <DependentUpon>Interchange.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interchange.Master.designer.cs">
+      <DependentUpon>Interchange.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDetails.aspx.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemDetails.aspx.designer.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GetItemInfo.ashx.cs">
+      <DependentUpon>GetItemInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInfo.aspx.cs">
+      <DependentUpon>ItemInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemInfo.aspx.designer.cs">
+      <DependentUpon>ItemInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Items.ashx.cs">
+      <DependentUpon>Items.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Items.aspx.cs">
+      <DependentUpon>Items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Items.aspx.designer.cs">
+      <DependentUpon>Items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewOrder.aspx.cs">
+      <DependentUpon>NewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewOrder.aspx.designer.cs">
+      <DependentUpon>NewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.ashx.cs">
+      <DependentUpon>Order.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintOrder.aspx.cs">
+      <DependentUpon>PrintOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintOrder.aspx.designer.cs">
+      <DependentUpon>PrintOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecoverPassword.aspx.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecoverPassword.aspx.designer.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EditOrder.aspx" />
+    <Content Include="Items.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="NewOrder.aspx" />
+    <Content Include="Register.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EZakaz.Dao\EZakaz.Dao.csproj">
+      <Project>{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}</Project>
+      <Name>EZakaz.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EZakaz.Domain\EZakaz.Domain.csproj">
+      <Project>{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}</Project>
+      <Name>EZakaz.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EZakaz.Server.Core\EZakaz.Server.Core.csproj">
+      <Project>{26FF166A-2C76-4344-BB95-D25D10ADE4EE}</Project>
+      <Name>EZakaz.Server.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CreateUser.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="MyProfile.aspx" />
+    <Content Include="Orders.aspx" />
+    <Content Include="RecoverPassword.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="User.aspx" />
+    <Content Include="Users.aspx" />
+    <Content Include="Web.sitemap" />
+    <Content Include="ChangePassword.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Feedback.aspx" />
+    <Content Include="js\focusNextInput.js" />
+    <Content Include="Site.Master" />
+    <Content Include="Items.ashx" />
+    <Content Include="App_Themes\blue\ad-01.gif" />
+    <Content Include="App_Themes\blue\ad-02.gif" />
+    <Content Include="App_Themes\blue\ad-03.gif" />
+    <Content Include="App_Themes\blue\bg-button-search.gif" />
+    <Content Include="App_Themes\blue\bg-header.gif" />
+    <Content Include="App_Themes\blue\bg-main.gif" />
+    <Content Include="App_Themes\blue\bg-photo-frame.jpg" />
+    <Content Include="App_Themes\blue\bg-topnav.gif" />
+    <Content Include="App_Themes\blue\bullet-link-active.gif" />
+    <Content Include="App_Themes\blue\bullet-link-hover.gif" />
+    <Content Include="App_Themes\blue\bullet-link-visited.gif" />
+    <Content Include="App_Themes\blue\bullet-link.gif" />
+    <Content Include="App_Themes\blue\bullet.gif" />
+    <Content Include="App_Themes\blue\favicon.ico" />
+    <Content Include="App_Themes\blue\logo-graphic.gif" />
+    <Content Include="App_Themes\blue\msvs_template_simple_divs.css" />
+    <Content Include="App_Themes\blue\photo-big.jpg" />
+    <Content Include="App_Themes\blue\photo-small.jpg" />
+    <Content Include="App_Themes\blue\_notes\dwsync.xml" />
+    <Content Include="themes\default\ad-01.gif" />
+    <Content Include="themes\default\ad-02.gif" />
+    <Content Include="themes\default\ad-03.gif" />
+    <Content Include="themes\default\bg-button-search.gif" />
+    <Content Include="themes\default\bg-header.gif" />
+    <Content Include="themes\default\bg-main.gif" />
+    <Content Include="themes\default\bg-photo-frame.jpg" />
+    <Content Include="themes\default\bg-topnav.gif" />
+    <Content Include="themes\default\bullet-link-active.gif" />
+    <Content Include="themes\default\bullet-link-hover.gif" />
+    <Content Include="themes\default\bullet-link-visited.gif" />
+    <Content Include="themes\default\bullet-link.gif" />
+    <Content Include="themes\default\bullet.gif" />
+    <Content Include="themes\default\favicon.ico" />
+    <Content Include="themes\default\logo-graphic.gif" />
+    <Content Include="themes\default\msvs_template_simple_divs.css" />
+    <Content Include="themes\default\msvs_template_simple_tables.css" />
+    <Content Include="themes\default\photo-big.jpg" />
+    <Content Include="themes\default\photo-small.jpg" />
+    <Content Include="themes\default\_notes\dwsync.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\EditItemInfo.aspx" />
+    <Content Include="Content\img\2.png" />
+    <Content Include="Content\img\photo.gif" />
+    <Content Include="Content\jquery-lightbox-0.5\css\jquery.lightbox-0.5.css" />
+    <Content Include="Content\jquery-lightbox-0.5\images\lightbox-blank.gif" />
+    <Content Include="Content\jquery-lightbox-0.5\images\lightbox-btn-close.gif" />
+    <Content Include="Content\jquery-lightbox-0.5\images\lightbox-btn-next.gif" />
+    <Content Include="Content\jquery-lightbox-0.5\images\lightbox-btn-prev.gif" />
+    <Content Include="Content\jquery-lightbox-0.5\images\lightbox-ico-loading.gif" />
+    <Content Include="Content\jquery-lightbox-0.5\js\jquery.js" />
+    <Content Include="Content\jquery-lightbox-0.5\js\jquery.lightbox-0.5.js" />
+    <Content Include="Content\jquery-lightbox-0.5\js\jquery.lightbox-0.5.min.js" />
+    <Content Include="Content\jquery-lightbox-0.5\js\jquery.lightbox-0.5.pack.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="ItemDetails.aspx" />
+    <Content Include="ItemInfo.aspx" />
+    <Content Include="js\common.js" />
+    <Content Include="js\jquery-1.3.2.min.js" />
+    <Content Include="News.aspx" />
+    <Content Include="Order.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Error.aspx" />
+    <Content Include="GetItemInfo.ashx" />
+    <Content Include="NotFound.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="themes\chrome-icon.png" />
+    <Content Include="themes\firefoxicon.png" />
+    <Content Include="themes\opera-icon.png" />
+    <Content Include="Interchange.Master" />
+    <Content Include="PrintOrder.aspx" />
+    <Content Include="themes\interchange\images\img01.jpg" />
+    <Content Include="themes\interchange\images\img02.jpg" />
+    <Content Include="themes\interchange\images\img03.jpg" />
+    <Content Include="themes\interchange\images\img04.jpg" />
+    <Content Include="themes\interchange\images\img05.jpg" />
+    <Content Include="themes\interchange\images\img06.jpg" />
+    <Content Include="themes\interchange\images\img07.jpg" />
+    <Content Include="themes\interchange\images\img08.jpg" />
+    <Content Include="themes\interchange\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>40007</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

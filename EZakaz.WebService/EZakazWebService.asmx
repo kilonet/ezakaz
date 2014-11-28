@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="EZakazWebService.asmx.cs" Class="EZakaz.WebService.BaseWebService" %>

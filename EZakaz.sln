@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{33E8F732-3A6A-4E63-BDC3-072EA8363C1A}"
+	ProjectSection(SolutionItems) = preProject
+		Libs\Castle.Core.dll = Libs\Castle.Core.dll
+		Libs\Equin.ApplicationFramework.BindingListView.dll = Libs\Equin.ApplicationFramework.BindingListView.dll
+		Libs\Iesi.Collections.dll = Libs\Iesi.Collections.dll
+		Libs\JAGregory.Controls.DeleGrid.dll = Libs\JAGregory.Controls.DeleGrid.dll
+		Libs\log4net.dll = Libs\log4net.dll
+		Libs\NHibernate.dll = Libs\NHibernate.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.Domain", "EZakaz.Domain\EZakaz.Domain.csproj", "{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.SchemaGen", "EZakaz.SchemaGen\EZakaz.SchemaGen.csproj", "{D55F4D54-BFD6-45F9-BDDF-1B671A978078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.Dao", "EZakaz.Dao\EZakaz.Dao.csproj", "{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.DaoImpl", "EZakaz.DaoImpl\EZakaz.DaoImpl.csproj", "{B20275E3-A26F-4236-ADEF-30D4DB4EDFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.Server.Core", "EZakaz.Server.Core\EZakaz.Server.Core.csproj", "{26FF166A-2C76-4344-BB95-D25D10ADE4EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.Web.UI", "EZakaz.Web.UI\EZakaz.Web.UI.csproj", "{48044853-5DBD-4A4D-B5ED-053F802E45E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.Common", "EZakaz.Common\EZakaz.Common.csproj", "{F762790F-4B9A-4811-939B-CB58FCE08A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.AccessToSql", "EZakaz.AccessToSql\EZakaz.AccessToSql.csproj", "{5F1CCFC6-ED1F-4FF5-8C50-03AF3012D48A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.WebService", "EZakaz.WebService\EZakaz.WebService.csproj", "{44E20B3F-4D0F-4A18-B074-E93EB7EBC858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.RichClient", "EZakaz.RichClient\EZakaz.RichClient.csproj", "{8491D2D4-9313-434E-B199-8793EEE7E430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.Office.RichClient", "EZakaz.Office.RichClient\EZakaz.Office.RichClient.csproj", "{F2E2D065-2E33-4579-9DAF-9698ECACBB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EZakaz.CopyUsersFromAccessToSite", "EZakaz.CopyUsersFromAccessToSite\EZakaz.CopyUsersFromAccessToSite.csproj", "{2ACE67A8-2B53-4AFE-A3C5-9A154935BC2B}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55F4D54-BFD6-45F9-BDDF-1B671A978078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55F4D54-BFD6-45F9-BDDF-1B671A978078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55F4D54-BFD6-45F9-BDDF-1B671A978078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55F4D54-BFD6-45F9-BDDF-1B671A978078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20275E3-A26F-4236-ADEF-30D4DB4EDFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20275E3-A26F-4236-ADEF-30D4DB4EDFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20275E3-A26F-4236-ADEF-30D4DB4EDFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20275E3-A26F-4236-ADEF-30D4DB4EDFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26FF166A-2C76-4344-BB95-D25D10ADE4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26FF166A-2C76-4344-BB95-D25D10ADE4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26FF166A-2C76-4344-BB95-D25D10ADE4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26FF166A-2C76-4344-BB95-D25D10ADE4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48044853-5DBD-4A4D-B5ED-053F802E45E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48044853-5DBD-4A4D-B5ED-053F802E45E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48044853-5DBD-4A4D-B5ED-053F802E45E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48044853-5DBD-4A4D-B5ED-053F802E45E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F762790F-4B9A-4811-939B-CB58FCE08A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F762790F-4B9A-4811-939B-CB58FCE08A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F762790F-4B9A-4811-939B-CB58FCE08A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F762790F-4B9A-4811-939B-CB58FCE08A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1CCFC6-ED1F-4FF5-8C50-03AF3012D48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1CCFC6-ED1F-4FF5-8C50-03AF3012D48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1CCFC6-ED1F-4FF5-8C50-03AF3012D48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1CCFC6-ED1F-4FF5-8C50-03AF3012D48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44E20B3F-4D0F-4A18-B074-E93EB7EBC858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44E20B3F-4D0F-4A18-B074-E93EB7EBC858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44E20B3F-4D0F-4A18-B074-E93EB7EBC858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44E20B3F-4D0F-4A18-B074-E93EB7EBC858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8491D2D4-9313-434E-B199-8793EEE7E430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8491D2D4-9313-434E-B199-8793EEE7E430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8491D2D4-9313-434E-B199-8793EEE7E430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8491D2D4-9313-434E-B199-8793EEE7E430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E2D065-2E33-4579-9DAF-9698ECACBB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E2D065-2E33-4579-9DAF-9698ECACBB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E2D065-2E33-4579-9DAF-9698ECACBB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E2D065-2E33-4579-9DAF-9698ECACBB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ACE67A8-2B53-4AFE-A3C5-9A154935BC2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ACE67A8-2B53-4AFE-A3C5-9A154935BC2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ACE67A8-2B53-4AFE-A3C5-9A154935BC2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ACE67A8-2B53-4AFE-A3C5-9A154935BC2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

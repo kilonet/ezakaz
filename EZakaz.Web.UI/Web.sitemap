@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode title="root" roles="*">
+
+        <siteMapNode title="Новости" url="~\"  />
+
+        <siteMapNode url="" title="Администрирование" roles="Admin, Staff">
+			<siteMapNode url="~\Users.aspx" title="Пользователи" roles="Admin, Staff" />
+			<siteMapNode url="~\CreateUser.aspx" title="Создать пользователя" roles="Admin"/>
+			<siteMapNode url="~\Test.aspx" title="Тестовые данные" roles="Admin"/>
+		</siteMapNode>
+		<!--<siteMapNode url="~\Register.aspx" title="Регистрация"  description=""  />-->
+
+		<siteMapNode url="" title="Заказы" roles="Admin, Staff, Client">
+			<siteMapNode url="~\Orders.aspx" title="Список заказов"  description="" />
+			<siteMapNode url="~\Items.aspx" title="Сделать заказ"  description="" />
+		</siteMapNode>
+
+
+		<siteMapNode title="Личные данные" url="" roles="Admin, Staff, Client">
+			<siteMapNode url="~\MyProfile.aspx" title="Мой профиль" />
+			<siteMapNode url="~\ChangePassword.aspx" title="Сменить пароль"/>	
+		</siteMapNode>
+
+        <siteMapNode title="Редактировать Новости" url="~\News.aspx"  roles="Admin, Staff"/>
+
+    </siteMapNode>
+
+   
+
+</siteMap>

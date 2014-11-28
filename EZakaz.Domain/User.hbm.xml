@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   namespace="EZakaz.Domain"
+                   assembly="EZakaz.Domain">
+	
+	<class name="User" table="User1">
+
+	<id name="Id">
+		<generator class="increment" />
+	</id>
+
+	<set name="Orders" cascade="all" inverse="true">
+		<key column="user_id" foreign-key="FK_User_Order"/>
+		<one-to-many class="Order" />
+	</set>
+
+
+	<property name="Role" not-null="true" column="role" />	
+	<property name="IsActive" not-null="true" column="is_active"></property>
+	<property name="ContactName" length="250" column="contact_name"></property>
+	<property name="Phone" length="250" column="phone"></property>
+	<property name="Address" length="250" column="address"></property>
+	<property name="Email" length="250" not-null="true" column="email"></property>
+	<property name="Name" length="250" not-null="true" column="name"></property>
+	<property name="PasswordHash" not-null="true" column="password_hash"></property>
+	<property name="Login" unique="true" length="250" not-null="true" column="login"></property>
+	<property name="IsNew" not-null="true" column="is_new"/>
+	<property name="PriceType" not-null="true" column="price_type"/>
+	<property name="AccessId" not-null="true" column="access_id"/>
+			   
+	</class>
+</hibernate-mapping>	

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26FF166A-2C76-4344-BB95-D25D10ADE4EE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EZakaz.Server.Core</RootNamespace>
+    <AssemblyName>EZakaz.Server.Core</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="AbstractPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AbstractPresenter.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="ImageUtils.cs" />
+    <Compile Include="IPresenter.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="MyTreeNode\MyTreeNode.cs" />
+    <Compile Include="Presenters\ChangePasswordPresenter.cs" />
+    <Compile Include="Presenters\CreateUserPresenter.cs" />
+    <Compile Include="Presenters\DefaultPresenter.cs" />
+    <Compile Include="Presenters\EditItemInfoPresenter.cs" />
+    <Compile Include="Presenters\EditOrder1Presenter.cs" />
+    <Compile Include="Presenters\EditOrderPresenter.cs" />
+    <Compile Include="Presenters\FeedbackPresenter.cs" />
+    <Compile Include="Presenters\ItemDetailsPresenter.cs" />
+    <Compile Include="Presenters\ItemsPresenter.cs" />
+    <Compile Include="Presenters\LoginPresenter.cs" />
+    <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Presenters\MyProfilePresenter.cs" />
+    <Compile Include="Presenters\NewOrderPresenter.cs" />
+    <Compile Include="Presenters\NewsPresenter.cs" />
+    <Compile Include="Presenters\OrdersPresenter.cs" />
+    <Compile Include="Presenters\PrintOrderPresenter.cs" />
+    <Compile Include="Presenters\RecoverPasswordPresenter.cs" />
+    <Compile Include="Presenters\RegisterUserPresenter.cs" />
+    <Compile Include="Presenters\TestPresenter.cs" />
+    <Compile Include="Presenters\UserPresenter.cs" />
+    <Compile Include="Presenters\UsersPresenter.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="Security\UserManagment.cs" />
+    <Compile Include="Services\CommonService.cs" />
+    <Compile Include="Services\MailService.cs" />
+    <Compile Include="Services\NewsService.cs" />
+    <Compile Include="Services\OrderService.cs" />
+    <Compile Include="Services\TestService.cs" />
+    <Compile Include="Views\IChangePasswordView.cs" />
+    <Compile Include="Views\ICreateUserView.cs" />
+    <Compile Include="Views\IEditItemInfoView.cs" />
+    <Compile Include="Views\IEditOrder1View.cs" />
+    <Compile Include="Views\IEditOrderView.cs" />
+    <Compile Include="Views\IFeedbackView.cs" />
+    <Compile Include="Views\IItemDetailsView.cs" />
+    <Compile Include="Views\IItemsView.cs" />
+    <Compile Include="Views\ILoginView.cs" />
+    <Compile Include="Views\IMainView.cs" />
+    <Compile Include="Views\IMyProfileView.cs" />
+    <Compile Include="Views\INewOrderView.cs" />
+    <Compile Include="Views\INewsView.cs" />
+    <Compile Include="Views\IOrdersView.cs" />
+    <Compile Include="Views\IPrintOrderView.cs" />
+    <Compile Include="Views\IRecoverPasswordView.cs" />
+    <Compile Include="Views\IRegisterUserView.cs" />
+    <Compile Include="Views\IUsersView.cs" />
+    <Compile Include="Views\IUserView.cs" />
+    <Compile Include="Web\AbstractRoleProvider.cs" />
+    <Compile Include="Web\EZakazRoleProvider.cs" />
+    <Compile Include="Web\IUserContext.cs" />
+    <Compile Include="Web\NHibernateSessionModule.cs" />
+    <Compile Include="Web\UserContext.cs" />
+    <Compile Include="Web\WebUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="JAGregory.Controls.DeleGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\JAGregory.Controls.DeleGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EZakaz.Common\EZakaz.Common.csproj">
+      <Project>{F762790F-4B9A-4811-939B-CB58FCE08A3D}</Project>
+      <Name>EZakaz.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EZakaz.DaoImpl\EZakaz.DaoImpl.csproj">
+      <Project>{B20275E3-A26F-4236-ADEF-30D4DB4EDFFD}</Project>
+      <Name>EZakaz.DaoImpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EZakaz.Dao\EZakaz.Dao.csproj">
+      <Project>{C4ED898E-32B7-48AC-AE66-1408CF5FE86F}</Project>
+      <Name>EZakaz.Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EZakaz.Domain\EZakaz.Domain.csproj">
+      <Project>{B8035ED8-847D-49E4-87D5-575E1BFFAAEB}</Project>
+      <Name>EZakaz.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+</Project>
